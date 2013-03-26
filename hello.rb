@@ -1,4 +1,5 @@
-#!/usr/bin/env ruby
+require './person.rb'
+
 print "What is your name? "
-name = gets.chomp
-puts "Hello #{name}!"
+person = Person.new(gets.chomp)
+puts person.say_hello
